@@ -1,0 +1,23 @@
+{
+  "name": "goit-js-v3-classwork-16",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dorian Devua <dorian.devua@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "lodash.throttle": "^4.1.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "parcel-transformer-hbs": "^1.0.4"
+  }
+}

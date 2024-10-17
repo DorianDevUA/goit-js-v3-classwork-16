@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Майстерня: форма відгуків</title>
+  </head>
+  <body>
+    <p><a href="./index.html">На головну</a></p>
+
+    <form class="feedback-form js-feedback-form">
+      <label>
+        <b>Ім'я</b>
+        <input type="text" name="name" placeholder="Введіть ваше ім'я" />
+      </label>
+      <label>
+        <b>Повідомлення</b>
+        <textarea name="message" rows="6"></textarea>
+      </label>
+      <button type="submit">Залишити відгук</button>
+    </form>
+    <div class="js-hbs"></div>
+    <script type="module" src="./js/02-feedback.js"></script>
+  </body>
+</html>
