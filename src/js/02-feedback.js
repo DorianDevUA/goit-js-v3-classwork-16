@@ -6,7 +6,6 @@ const refs = {
   feedbackForm: document.querySelector('.js-feedback-form'),
   userName: document.querySelector('.js-feedback-form input[name="name"]'),
   userMsg: document.querySelector('.js-feedback-form textarea[name="message"]'),
-  hbsContainer: document.querySelector('.js-hbs'),
 };
 
 const STORAGE_KEY = 'feedback';
@@ -19,10 +18,7 @@ populateFormFields();
 
 function handleFormSubmit(evt) {
   evt.preventDefault();
-
   const form = evt.currentTarget;
-  const { name, message } = form.elements;
-  console.log(`Name: ${name.value}\nMessage: ${message.value}`);
 
   form.reset();
   resetFormData();
@@ -31,7 +27,6 @@ function handleFormSubmit(evt) {
 
 function handleInputChange(evt) {
   formData[evt.target.name] = evt.target.value;
-
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 }
 
